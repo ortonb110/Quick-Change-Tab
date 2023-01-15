@@ -1,0 +1,100 @@
+//Imports
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+    background-color: #2A80B9;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    place-content: center;
+
+    main {
+        background-color: #fff;
+        padding: 2rem 1.5rem;
+        border-radius: 5px;
+
+
+        .input-container {
+            width: 450px;
+            margin-bottom: 2rem;
+            
+            input:first-child {
+                width: 70%;
+                border: none;
+                border-bottom: 2px solid #d1d1d1;
+                padding: 1.2rem 0;
+                font-size: 1.5rem;
+                transition: all 0.3s ease;
+                &:focus {
+                    outline: none;
+                    border-color: #000;
+                }
+
+
+            }
+
+            button {
+                border: none;
+                font-size: 2rem;
+                padding: 1.3rem 1rem;
+                border-radius: 2px;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                
+                &:active {
+                    transform: translateY(4px);
+                    
+                }
+
+                &:hover {
+                    background-color: #d1d1d1;
+                    
+                }
+            }
+
+        }
+
+        .rating {
+
+            span {
+                cursor: pointer;
+                text-transform: uppercase;
+                font-weight: bold;
+                color: #bebebe;
+                transition: all 0.3s ease;
+                margin-right: 1rem;
+
+                &:hover {
+                    color: #000;
+                }
+
+                &.active {
+                    color: #000;
+                }
+            }
+
+            p {
+                margin-bottom: 0;
+                font-weight: 500;
+                
+            }
+        }
+
+    }
+
+
+
+}
